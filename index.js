@@ -2,7 +2,6 @@ window.chromeExtensionParavi = false;
 var element = document.createElement("button");
 element.id = "chromeExtensionParavi"
 element.innerText = "ピクチャーインピクチャ: ON";
-// 要素にクリックイベントを追加する
 element.onclick = function() {
   if (!window.chromeExtensionParavi) {
     document.querySelector('.vjs-controls-enabled video').requestPictureInPicture();
