@@ -1,13 +1,22 @@
 {
   "name": "chrome-extension-paravi",
-  "description" : "paraviの動画をピクチャーインピクチャーで見るためのchrome extensionです",
+  "description": "paraviの動画をピクチャーインピクチャーで見るためのchrome extensionです",
   "version": "1.0",
   "manifest_version": 2,
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
   "author": "nonoakij",
   "content_scripts": [
     {
-      "matches": ["https://www.paravi.jp/watch/*"],
-      "js": ["index.js"]
+      "matches": [
+        "https://www.paravi.jp/watch/*"
+      ],
+      "js": [
+        "index.js"
+      ]
     }
   ]
 }
